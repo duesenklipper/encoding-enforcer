@@ -37,7 +37,10 @@
                         <configuration>
                             <rules>
                                 <enforceEncoding implementation="de.duesenklipper.maven.enforcer.EncodingEnforcer">
-
+                                    <patterns>
+                                        <pattern>**/*.java:UTF-8</pattern>
+                                        <pattern>**/*.properties:ISO-8859-1</pattern>
+                                    </patterns>
                                 </enforceEncoding>
                             </rules>
                         </configuration>
